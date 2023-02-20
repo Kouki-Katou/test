@@ -1,0 +1,231 @@
+*{
+  color:white;
+  /*background:red;*/
+}
+
+#access{
+position:fixed;
+
+z-index:10;
+}
+
+
+#base{
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+}
+
+#back{
+position:fixed;
+z-index:0;
+width:100%;
+}
+
+#contents{
+position:fixed;
+z-index:10;
+padding:10px;
+width:100%;
+
+}
+
+#anchor1{
+position:absolute;
+top:1000px;
+visibility:hidden;
+}
+
+#anchor2{
+position:absolute;
+top:2000px;
+visibility:hidden;
+}
+
+#anchor3{
+position:absolute;
+top:3000px;
+visibility:hidden;
+}
+
+#anchor4{
+position:absolute;
+top:4000px;
+visibility:hidden;
+}
+
+#anchor5{
+position:absolute;
+top:5000px;
+visibility:hidden;
+}
+
+
+
+#head1,#head2,.head{
+  color: white;
+  width:100%;
+  font-size:60px;
+  font-weight:bold;
+}
+
+#nameBox{
+overflow:hidden;
+color:white;
+font-size:20px;
+font-family: Arial,Charcoal;
+text-align:center;
+}
+
+#toc{
+text-align:center;
+}
+
+/*ABOUT ME*/
+#about{
+width:85%;
+}
+
+
+
+
+
+#face{
+position:relative;
+width:90px;
+border:2px solid white;
+border-radius:10px;
+float:right;
+right:0px;
+
+}
+
+#name2{
+
+height:110px;
+}
+
+#Ename{
+position:absolute;
+font-family: Arial,Charcoal;
+font-size:35px;
+bottom:0px;
+}
+
+#Jname{
+position:absolute;
+font-family: Hiragino Sans;
+font-size:20px;
+bottom:35px;
+}
+
+#prof{
+background:rgba(0,0,0,0.5);
+
+font-family: Hiragino Sans;
+font-size:12px;
+position:absolute;
+  letter-spacing:1px;
+}
+
+
+/*WORKS*/
+#works{
+width:85%;
+}
+
+#exhibit{
+  
+  width:100%;
+}
+
+#exhibit td{
+background:rgba(0,0,0,0.5);
+  border:1px solid gray ;
+  width:50%;
+  font-family: Hiragino Sans;
+font-size:10px;
+}
+
+
+.workImg{
+position:relative;
+top:0px;
+  width:100%;
+}
+
+/*CONTACT*/
+
+#contact{
+  width:85%;
+}
+#address{
+  position:absolute;
+  top:100px;
+  width:100%;
+  text-align:center;
+}
+
+.icon{
+width:70px;
+padding:30px;
+top:10px;
+}
+
+.fadein-before{
+    /*透過度の設定。0で表示されなくなる。*/
+    opacity: 0;
+    /*要素を左に100pxずらしたところに配置する*/
+    transform:translateX(500px);
+    /*透過度と表示位置を1秒かけて変化させる*/
+    transition:opacity 2s,transform 2s;
+}
+
+.fadein-after{
+    /*透過度の設定。非表示から表示にする。*/
+    opacity: 1;
+    /*要素を100px左にしていたのを元の位置に戻す*/
+    transform: translate(0);
+}
+
+.in-before{
+    /*透過度の設定。0で表示されなくなる。*/
+    opacity: 0;
+    /*要素を左に100pxずらしたところに配置する*/
+    transform:translateY(50px);
+    /*透過度と表示位置を1秒かけて変化させる*/
+    transition:transform 1s,opacity 1s;
+}
+
+.in-after{
+    /*透過度の設定。非表示から表示にする。*/
+    opacity: 1;
+    /*要素を100px左にしていたのを元の位置に戻す*/
+    transform: translate(0);
+}
+
+.box-bef{
+    position:absolute;
+    /*要素を左に100pxずらしたところに配置する*/
+    transform:translateY(600px);
+    /*透過度と表示位置を1秒かけて変化させる*/
+    transition:transform 0.3s;
+}
+
+.box-mid{
+    position:absolute;
+    
+    /*要素を100px左にしていたのを元の位置に戻す*/
+    transform: translate(0);
+    transition:transform 0.3s;
+}
+
+.box-aft{
+    /*透過度の設定。非表示から表示にする。*/
+    
+    /*要素を100px左にしていたのを元の位置に戻す*/
+    transform: translateY(-600px);
+    transition:transform 0.3s;
+    
+}
